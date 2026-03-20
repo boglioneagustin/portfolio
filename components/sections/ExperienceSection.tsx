@@ -1,0 +1,62 @@
+import Container from "@/components/layout/Container";
+import ExperienceStack, { type AboutStackCard } from "@/components/sections/ExperienceStack";
+
+const aboutCards: AboutStackCard[] = [
+  {
+    title: "What I do",
+    text: "I help companies optimize their processes and scale their operations through automation, artificial intelligence, and software development. I focus on designing solutions that connect systems, simplify workflows, and turn data into faster, more strategic decisions.",
+  },
+  {
+    title: "Background",
+    text: "Originally from Argentina, I've worked with multiple companies across different parts of the world, including Argentina, Chile, Peru, and the United States. My work focuses on automation, artificial intelligence, and software development, helping organizations streamline operations.",
+  },
+  {
+    title: "My Approach",
+    text: "I believe the best systems start with deeply understanding the problem before writing a single line of code. I analyze processes, identify automation opportunities, and build scalable, efficient solutions that are easy to maintain.",
+  },
+  {
+    title: "Career",
+    entries: [
+      ["Workflow Automation - WordPress Developer - IT Support", "Feb 24 - Present"],
+      ["Founder", "Jan 3 - Present"],
+      ["Automation & WordPress Developer", "Feb 24 - Dec 24"],
+      ["System Analyst", "Jun 24 - Jul 26"],
+      ["WordPress Developer - IT", "Jan 23 - Sep 23"],
+    ],
+  },
+];
+
+export default function ExperienceSection() {
+  return (
+    <section id="about" className="pt-24 sm:pt-28 about-section-shell">
+      <Container>
+        <div className="about-layout md:grid md:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)] md:items-start md:gap-10 lg:gap-12 xl:gap-16">
+          <div className="about-sticky-block reveal-up">
+            <span className="inline-block rounded-full bg-[#f8f8f7] px-6 py-2.5 about-tag">About me</span>
+            <h2 className="about-title max-w-[540px] text-center md:text-left">Mindset, methods, & experience</h2>
+            <p className="about-intro max-w-[520px] text-center md:text-left">
+              I design systems that blend product, automation, and execution so teams can move faster without losing
+              clarity.
+            </p>
+            <a
+              href="/cv/Alejo-Boglione-CV.pdf"
+              download
+              className="btn-primary inline-flex items-center gap-3 rounded-full px-9 py-4 text-[16px] font-medium text-white"
+            >
+              <span>Download CV</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5V15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                <path d="M8 11L12 15L16 11" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M5 18H19" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            </a>
+          </div>
+
+          <div>
+            <ExperienceStack cards={aboutCards} />
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
