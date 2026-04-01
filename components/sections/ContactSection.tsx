@@ -14,7 +14,7 @@ export default function ContactSection() {
           />
         </div>
         <div className="reveal-up reveal-delay-1 mt-10">
-          <ContactForm />
+          <ContactForm redirectTo="/thank-you" />
         </div>
       </Container>
     </section>

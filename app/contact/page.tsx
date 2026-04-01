@@ -22,7 +22,7 @@ export default function ContactPage() {
             />
           </div>
           <div className="reveal-up reveal-delay-1 mt-10 sm:mt-12">
-            <ContactForm />
+            <ContactForm redirectTo="/thank-you" />
           </div>
         </Container>
       </section>

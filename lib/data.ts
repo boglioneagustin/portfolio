@@ -99,6 +99,7 @@ export type ProjectCaseStudy = {
 
 export type FaqItem = {
   question: string;
+  answer: string;
 };
 
 export type AboutCareerItem = {
@@ -633,11 +634,31 @@ export function getProjectBySlug(slug: string): ProjectCaseStudy | undefined {
 }
 
 export const faqItems: FaqItem[] = [
-  { question: "How do we get started?" },
-  { question: "Can you redesign my existing website or app?" },
-  { question: "Do you also handle development or just design?" },
-  { question: "What tools do you use for design?" },
-  { question: "Can I request additional revisions?" },
+  {
+    question: "How do we get started?",
+    answer:
+      "We start with a quick discovery call to understand your goals, audience, and requirements. From there, we define the scope, timeline, and next steps to kick off the project smoothly.",
+  },
+  {
+    question: "Can you redesign my existing website or app?",
+    answer:
+      "Absolutely. We can audit your current product, identify improvement areas, and redesign it to enhance user experience, performance, and visual impact while keeping what already works.",
+  },
+  {
+    question: "Do you also handle development or just design?",
+    answer:
+      "We handle both. From UX/UI design to full development, we deliver complete, scalable solutions ready to launch and grow.",
+  },
+  {
+    question: "What tools do you use for design?",
+    answer:
+      "We typically use Figma for design and prototyping, along with modern tools depending on the project. Our stack is flexible and tailored to your needs.",
+  },
+  {
+    question: "Can I request additional revisions?",
+    answer:
+      "Yes, revisions are part of our process. We collaborate closely with you and refine the work until it aligns perfectly with your vision.",
+  },
 ];
 
 export const aboutCareerItems: AboutCareerItem[] = [

@@ -24,6 +24,13 @@ export default function AboutContactSectionEs() {
             placeholders={{ name: "Tu nombre", email: "tu@email.com", project: "Contame que queres construir" }}
             submitLabel="Enviar"
             helperText="**Te respondo dentro de 24 horas**"
+            redirectTo="/es/thank-you"
+            messages={{
+              sending: "Enviando...",
+              success: "Mensaje enviado. Te respondo a la brevedad.",
+              error: "No se pudo enviar el mensaje. Intenta nuevamente.",
+              invalid: "Completa todos los campos con un email valido.",
+            }}
           />
         </div>
       </Container>

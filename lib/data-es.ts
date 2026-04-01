@@ -177,11 +177,31 @@ export const servicesEs: Service[] = [
 ];
 
 export const faqItemsEs: FaqItem[] = [
-  { question: "Como empezamos?" },
-  { question: "Podes redisenar mi sitio o app actual?" },
-  { question: "Tambien desarrollas o solo disenas?" },
-  { question: "Que herramientas usas para diseno?" },
-  { question: "Puedo pedir revisiones adicionales?" },
+  {
+    question: "Como empezamos?",
+    answer:
+      "Empezamos con una llamada de descubrimiento rapida para entender tus objetivos, audiencia y requerimientos. Desde ahi definimos alcance, tiempos y proximos pasos para iniciar el proyecto de forma fluida.",
+  },
+  {
+    question: "Podes redisenar mi sitio web o app actual?",
+    answer:
+      "Absolutamente. Podemos auditar tu producto actual, identificar areas de mejora y redisenarlo para mejorar experiencia de usuario, rendimiento e impacto visual, manteniendo lo que ya funciona.",
+  },
+  {
+    question: "Tambien haces desarrollo o solo diseno?",
+    answer:
+      "Hacemos ambos. Desde diseno UX/UI hasta desarrollo completo, entregamos soluciones escalables listas para lanzar y crecer.",
+  },
+  {
+    question: "Que herramientas usan para diseno?",
+    answer:
+      "Usamos principalmente Figma para diseno y prototipado, junto con herramientas modernas segun el proyecto. Nuestro stack es flexible y se adapta a tus necesidades.",
+  },
+  {
+    question: "Puedo pedir revisiones adicionales?",
+    answer:
+      "Si, las revisiones son parte del proceso. Colaboramos de cerca con vos y refinamos el trabajo hasta que quede alineado con tu vision.",
+  },
 ];
 
 export const aboutCareerItemsEs: AboutCareerItem[] = [
