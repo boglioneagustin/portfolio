@@ -90,9 +90,10 @@ export default function ContactForm({
           router.push(redirectTo);
         }, 350);
       }
-    } catch {
+    } catch (error) {
       setStatus("error");
-      setFeedback(errorText);
+      const message = error instanceof Error ? error.message : "";
+      setFeedback(message || errorText);
     }
   };
 

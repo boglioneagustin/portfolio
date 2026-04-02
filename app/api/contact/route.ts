@@ -1,6 +1,8 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+
 type ContactPayload = {
   name?: string;
   email?: string;
@@ -47,6 +49,9 @@ export async function POST(request: Request) {
     const safeProject = escapeHtml(project);
 
     const smtpPort = Number(process.env.SMTP_PORT);
+    if (Number.isNaN(smtpPort)) {
+      return NextResponse.json({ error: "SMTP_PORT must be a valid number." }, { status: 503 });
+    }
     const toEmail = process.env.CONTACT_TO ?? "boglioneagustin@gmail.com";
     const fromEmail = process.env.CONTACT_FROM ?? process.env.SMTP_USER!;
     const secure = smtpPort === 465;
@@ -85,7 +90,28 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ ok: true }, { status: 200 });
-  } catch (error) {
+  } catch (error: unknown) {
+    const smtpError = error as { code?: string; message?: string; response?: string };
+    console.error("Contact API error:", {
+      code: smtpError?.code,
+      message: smtpError?.message,
+      response: smtpError?.response,
+    });
+
+    if (smtpError?.code === "EAUTH") {
+      return NextResponse.json(
+        { error: "SMTP authentication failed. Check SMTP_USER / SMTP_PASS (App Password)." },
+        { status: 500 },
+      );
+    }
+
+    if (smtpError?.code === "ESOCKET") {
+      return NextResponse.json(
+        { error: "SMTP connection failed. Check SMTP_HOST / SMTP_PORT and provider rules." },
+        { status: 500 },
+      );
+    }
+
     const message = error instanceof Error ? error.message : "Unexpected error";
     return NextResponse.json({ error: message }, { status: 500 });
   }
