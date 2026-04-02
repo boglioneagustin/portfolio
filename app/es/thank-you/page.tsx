@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+
+export const metadata: Metadata = {
+  title: "Gracias | Boglione Agustin | Portfolio",
+  description:
+    "Mensaje enviado correctamente. Gracias por contactar a Boglione Agustin. Recibiras una respuesta en breve para avanzar con tu proyecto.",
+  alternates: {
+    canonical: "/es/thank-you",
+    languages: {
+      en: "/thank-you",
+      es: "/es/thank-you",
+    },
+  },
+};
 
 export default function ThankYouEsPage() {
   return (

@@ -18,13 +18,37 @@ export function generateMetadata({ params }: ProjectDetailEsPageProps): Metadata
 
   if (!project) {
     return {
-      title: "Proyecto no encontrado",
+      title: "Proyecto no encontrado | Boglione Agustin | Portfolio",
+      description: "El proyecto solicitado no se encontro en el portfolio.",
     };
   }
 
   return {
-    title: `${project.title} | Agustin A. Boglione`,
+    title: `${project.title} | Boglione Agustin | Portfolio`,
     description: project.intro,
+    alternates: {
+      canonical: `/es/all-works/${project.slug}`,
+      languages: {
+        en: `/all-works/${project.slug}`,
+        es: `/es/all-works/${project.slug}`,
+      },
+    },
+    openGraph: {
+      title: `${project.title} | Boglione Agustin | Portfolio`,
+      description: project.intro,
+      url: `https://boglioneagustin.com/es/all-works/${project.slug}`,
+      type: "article",
+      locale: "es_AR",
+      images: project.previewImage
+        ? [{ url: project.previewImage, alt: project.previewImageAlt ?? project.title }]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Boglione Agustin | Portfolio`,
+      description: project.intro,
+      images: project.previewImage ? [project.previewImage] : undefined,
+    },
   };
 }
 

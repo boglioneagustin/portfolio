@@ -1,5 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+
+export const metadata: Metadata = {
+  title: "Thank You | Boglione Agustin | Portfolio",
+  description:
+    "Your message has been received. Thanks for contacting Boglione Agustin. You'll receive a reply shortly to continue your project discussion.",
+  alternates: {
+    canonical: "/thank-you",
+    languages: {
+      en: "/thank-you",
+      es: "/es/thank-you",
+    },
+  },
+};
 
 export default function ThankYouPage() {
   return (

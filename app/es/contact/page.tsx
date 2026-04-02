@@ -1,7 +1,21 @@
+import type { Metadata } from "next";
 import Container from "@/components/layout/Container";
 import FaqSectionEs from "@/components/sections/FaqSectionEs";
 import ContactForm from "@/components/ui/ContactForm";
 import SectionTitle from "@/components/ui/SectionTitle";
+
+export const metadata: Metadata = {
+  title: "Contacto | Boglione Agustin | Portfolio",
+  description:
+    "Hablemos de tu proyecto. Contacta a Boglione Agustin para soluciones de IA, automatizacion de procesos, desarrollo web y software escalable.",
+  alternates: {
+    canonical: "/es/contact",
+    languages: {
+      en: "/contact",
+      es: "/es/contact",
+    },
+  },
+};
 
 export default function ContactEsPage() {
   return (
