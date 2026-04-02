@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="reveal-up rounded-[28px] bg-[#17191f] px-6 py-10 sm:px-9 sm:py-12">
           <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap items-center gap-6">
-              <span className="text-[22px] font-semibold tracking-tight text-[#f3f3f1]">Alejo Boglione</span>
+              <span className="text-[22px] font-semibold tracking-tight text-[#f3f3f1]">Agustin A. Boglione</span>
               {links.map((item) => (
                 <Link key={item.label} href={item.href} className="text-sm text-[#b7bac3] transition-colors duration-200 hover:text-[#f3f3f1]">
                   {item.label}
@@ -47,7 +47,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 border-t border-white/15 pt-8 text-center text-sm text-[#e8e8eb]">
-            {isSpanish ? "Copyright 2025 por Alejo Boglione" : "Copyright 2025 by Alejo Boglione"}
+            {isSpanish ? "Copyright 2025 por Agustin A. Boglione" : "Copyright 2025 by Agustin A. Boglione"}
           </div>
         </div>
       </Container>

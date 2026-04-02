@@ -5,7 +5,7 @@ import AnimationController from "@/components/ui/AnimationController";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alejo Boglione",
+  title: "Agustin A. Boglione",
   description: "Portfolio landing page clone",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],

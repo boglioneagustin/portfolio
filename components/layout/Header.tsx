@@ -99,7 +99,7 @@ export default function Header() {
               aria-label="Go to home"
               className="button-soft relative grid h-11 w-11 place-items-center overflow-hidden rounded-full border border-white/80 bg-white shadow-[0_4px_14px_rgba(0,0,0,0.04)]"
             >
-              <Image src="/images/avatar/me.avif" alt="Alejo logo" fill className="object-cover" sizes="44px" priority />
+              <Image src="/images/avatar/me.avif" alt="Agustin A. logo" fill className="object-cover" sizes="44px" priority />
             </Link>
 
             <div className="flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function Header() {
                 aria-label="Go to home"
                 className="button-soft relative grid h-9 w-9 place-items-center overflow-hidden rounded-full border border-white/80"
               >
-                <Image src="/images/avatar/me.avif" alt="Alejo logo" fill className="object-cover" sizes="36px" priority />
+                <Image src="/images/avatar/me.avif" alt="Agustin A. logo" fill className="object-cover" sizes="36px" priority />
               </Link>
               <nav className="ml-[12px] flex items-center gap-[14px]">
                 {visibleNavItems.map((item) => (

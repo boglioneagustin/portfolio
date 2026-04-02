@@ -82,24 +82,26 @@ export default function HeroSectionEs() {
           <div className="reveal-up">
             <div className="relative w-fit">
               <h1 className="reveal-text pr-16 text-[64px] font-medium leading-[0.92] tracking-[-0.03em] text-[#141418] sm:pr-20 sm:text-[84px] lg:pr-24 lg:text-[96px]">
-                Alejo
+                <span className="relative inline-block">
+                  Agustin
+                  <span className="group absolute left-[calc(100%+30px)] top-[6px] z-[30] sm:left-[calc(100%+12px)] sm:top-[10px] lg:left-[calc(100%+14px)] lg:top-[12px]">
+                    <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#111111] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-[44px] group-hover:-translate-y-[30px] group-hover:opacity-100 sm:inline-flex">
+                      <SiFramer aria-hidden="true" />
+                    </span>
+                    <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#f2552c] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all delay-75 duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-[54px] group-hover:opacity-100 sm:inline-flex">
+                      <SiFigma aria-hidden="true" />
+                    </span>
+                    <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#111111] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all delay-100 duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-[44px] group-hover:-translate-y-[30px] group-hover:opacity-100 sm:inline-flex">
+                      <SiNextdotjs aria-hidden="true" />
+                    </span>
+                    <span className="relative z-10 inline-block h-[72px] w-[72px] overflow-hidden rounded-[20px] border border-white shadow-[0_8px_20px_rgba(0,0,0,0.08)] transition-transform duration-200 ease-in-out group-hover:-translate-y-[1px] sm:h-[82px] sm:w-[82px] sm:rounded-[22px]">
+                      <Image src="/images/avatar/me.avif" alt="Icono de Agustin A." fill className="object-cover" sizes="82px" priority />
+                    </span>
+                  </span>
+                </span>
                 <br />
                 Boglione.
               </h1>
-              <div className="group absolute right-[94px] top-[-14px] sm:right-[84px] sm:top-[8px] lg:right-[126px] lg:top-[6px] xl:right-[140px]">
-                <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#111111] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-x-[44px] group-hover:-translate-y-[30px] group-hover:opacity-100 sm:inline-flex">
-                  <SiFramer aria-hidden="true" />
-                </span>
-                <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#f2552c] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all delay-75 duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-[54px] group-hover:opacity-100 sm:inline-flex">
-                  <SiFigma aria-hidden="true" />
-                </span>
-                <span className="absolute left-[24px] top-[24px] hidden h-9 w-9 items-center justify-center rounded-[12px] border border-black/5 bg-white text-[16px] text-[#111111] opacity-0 shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all delay-100 duration-[240ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-[44px] group-hover:-translate-y-[30px] group-hover:opacity-100 sm:inline-flex">
-                  <SiNextdotjs aria-hidden="true" />
-                </span>
-                <div className="relative z-10 h-[72px] w-[72px] overflow-hidden rounded-[20px] border border-white shadow-[0_8px_20px_rgba(0,0,0,0.08)] transition-transform duration-200 ease-in-out group-hover:-translate-y-[1px] sm:h-[82px] sm:w-[82px] sm:rounded-[22px]">
-                  <Image src="/images/avatar/me.avif" alt="Icono de Alejo" fill className="object-cover" sizes="82px" priority />
-                </div>
-              </div>
             </div>
           </div>
 

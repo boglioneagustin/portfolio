@@ -8,7 +8,7 @@ export default function AboutHeroSectionEs() {
           <span className="text-[#ef4f2b]">Especialista en IA y automatizacion</span>
           <span className="relative inline-block pl-4 align-middle">
             <span className="relative inline-flex h-[66px] w-[66px] overflow-hidden rounded-[18px] border border-white shadow-[0_8px_18px_rgba(0,0,0,0.08)]">
-              <Image src="/images/avatar/me.avif" alt="Avatar de Alejo" fill className="object-cover" sizes="66px" priority />
+              <Image src="/images/avatar/me.avif" alt="Avatar de Agustin A." fill className="object-cover" sizes="66px" priority />
             </span>
           </span>
           <br />

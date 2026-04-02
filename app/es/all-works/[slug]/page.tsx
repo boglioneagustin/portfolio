@@ -23,7 +23,7 @@ export function generateMetadata({ params }: ProjectDetailEsPageProps): Metadata
   }
 
   return {
-    title: `${project.title} | Alejo Boglione`,
+    title: `${project.title} | Agustin A. Boglione`,
     description: project.intro,
   };
 }
