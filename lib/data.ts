@@ -680,8 +680,15 @@ export const aboutCareerItems: AboutCareerItem[] = [
     role: "Automation & WordPress Developer",
     company: "Grecko",
     period: "Feb 24 - Dec 24",
-    logoSrc: "/images/clients/grecko.jpg",
+    logoSrc: "/images/clients/grecko-logo.svg",
     logoAlt: "Grecko",
+  },
+  {
+    role: "Automation & WordPress Developer",
+    company: "Latinled",
+    period: "May 25 - Present",
+    logoSrc: "/images/clients/latinled-career.jpg",
+    logoAlt: "Latinled",
   },
   {
     role: "System Analyst",
